@@ -56,6 +56,9 @@ fn main() {
         if curl {
             cmd.arg("--with-libcurl");
         }
+        else if !curl {
+            cmd.arg("--without-libcurl");
+        }
         if gd {
             cmd.arg("--with-gd");
         }
